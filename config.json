@@ -163,6 +163,15 @@
         "pccomponentes",
         "el corte inglés"
       ]
+    },
+    {
+      "nombre": "🏬 Zara / El Corte Inglés / Carrefour / MediaMarkt",
+      "tiendas": [
+        "zara",
+        "corte ingl",
+        "carrefour",
+        "mediamarkt"
+      ]
     }
   ]
 }

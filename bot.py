@@ -59,6 +59,9 @@ def parsear_feed(xml_bytes, tienda_feed):
                 precio = a_numero(el.get("price")) or precio
             elif tag in ("temperature", "temp"):
                 temp = a_numero(el.text)
+        mt = re.match(r"\s*(-?\d+)\s?°", titulo)
+        if temp is None and mt:
+            temp = int(mt.group(1))
         if precio is None:
             m = re.search(r"(\d[\d.,]*)\s?(?:€|EUR)|(?:\$|MXN\s?)\s?(\d[\d.,]*)", titulo)
             if m:
@@ -89,6 +92,8 @@ def coincide(o, busq):
     if busq.get("precio_max") is not None and (o["precio"] is None or o["precio"] > busq["precio_max"]):
         return False
     if busq.get("descuento_min") and (o["descuento"] or 0) < busq["descuento_min"]:
+        return False
+    if busq.get("temperatura_min") and (o["temperatura"] or 0) < busq["temperatura_min"]:
         return False
     tiendas = [t.lower() for t in busq.get("tiendas", [])]
     if tiendas and not any(t in (o["tienda"] or "").lower() for t in tiendas):
