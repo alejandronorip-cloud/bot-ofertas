@@ -11,10 +11,6 @@
     {
       "nombre": "Chollometro Hot (España)",
       "url": "https://www.chollometro.com/rss/subiendo"
-    },
-    {
-      "nombre": "Promodescuentos (México)",
-      "url": "https://www.promodescuentos.com/rss/todas"
     }
   ],
   "busquedas": [
@@ -37,7 +33,6 @@
         "pantalón",
         "polo",
         "jersey",
-        "chamarra",
         "levi",
         "tommy",
         "lacoste",
@@ -62,7 +57,6 @@
       "palabras": [
         "zapatillas",
         "sneakers",
-        "tenis",
         "nike",
         "adidas",
         "new balance",
@@ -156,9 +150,7 @@
         "amazon",
         "mediamarkt",
         "pccomponentes",
-        "el corte inglés",
-        "mercado libre",
-        "liverpool"
+        "el corte inglés"
       ]
     }
   ]
