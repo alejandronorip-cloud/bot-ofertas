@@ -13,8 +13,8 @@ UA = "Mozilla/5.0 (X11; Linux x86_64) ofertas-bot/1.0"
 
 def cargar_config():
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
-    cfg["telegram_token"] = os.environ.get("TELEGRAM_TOKEN", cfg.get("telegram_token", ""))
-    cfg["telegram_chat_id"] = os.environ.get("TELEGRAM_CHAT_ID", cfg.get("telegram_chat_id", ""))
+    cfg["telegram_token"] = os.environ.get("TELEGRAM_TOKEN", cfg.get("telegram_token", "")).strip()
+    cfg["telegram_chat_id"] = os.environ.get("TELEGRAM_CHAT_ID", cfg.get("telegram_chat_id", "")).strip()
     return cfg
 
 
