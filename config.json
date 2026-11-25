@@ -15,6 +15,17 @@
   ],
   "busquedas": [
     {
+      "nombre": "👞 Dr. Martens 8065 Mary Jane",
+      "todas": [
+        "martens"
+      ],
+      "palabras": [
+        "8065",
+        "mary jane"
+      ],
+      "precio_max": 185
+    },
+    {
       "nombre": "👕 Moda hombre",
       "categorias": [
         "moda",

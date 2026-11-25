@@ -82,6 +82,8 @@ def coincide(o, busq):
     palabras = busq.get("palabras", [])
     if palabras and not any(k.lower() in texto for k in palabras):
         return False
+    if not all(t.lower() in texto for t in busq.get("todas", [])):
+        return False
     if any(x.lower() in texto for x in busq.get("excluir", [])):
         return False
     if busq.get("precio_max") is not None and (o["precio"] is None or o["precio"] > busq["precio_max"]):
