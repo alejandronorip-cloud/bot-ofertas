@@ -1,0 +1,165 @@
+{
+  "telegram_token": "",
+  "telegram_chat_id": "",
+  "intervalo_minutos": 10,
+  "ignorar_existentes_al_arrancar": false,
+  "feeds": [
+    {
+      "nombre": "Chollometro (España)",
+      "url": "https://www.chollometro.com/rss/nuevos"
+    },
+    {
+      "nombre": "Chollometro Hot (España)",
+      "url": "https://www.chollometro.com/rss/subiendo"
+    },
+    {
+      "nombre": "Promodescuentos (México)",
+      "url": "https://www.promodescuentos.com/rss/todas"
+    }
+  ],
+  "busquedas": [
+    {
+      "nombre": "👕 Moda hombre",
+      "categorias": [
+        "moda",
+        "ropa"
+      ],
+      "palabras": [
+        "hombre",
+        "camiseta",
+        "camisa",
+        "sudadera",
+        "chaqueta",
+        "abrigo",
+        "plumífero",
+        "vaquero",
+        "jeans",
+        "pantalón",
+        "polo",
+        "jersey",
+        "chamarra",
+        "levi",
+        "tommy",
+        "lacoste",
+        "calvin klein",
+        "ralph lauren",
+        "the north face"
+      ],
+      "excluir": [
+        "mujer",
+        "niña",
+        "niño",
+        "bebé",
+        "dama",
+        "infantil",
+        "kids",
+        "girl",
+        "women"
+      ]
+    },
+    {
+      "nombre": "👟 Zapatillas",
+      "palabras": [
+        "zapatillas",
+        "sneakers",
+        "tenis",
+        "nike",
+        "adidas",
+        "new balance",
+        "puma",
+        "reebok",
+        "asics",
+        "converse",
+        "vans",
+        "jordan",
+        "salomon",
+        "hoka",
+        "on running"
+      ],
+      "excluir": [
+        "mujer",
+        "niña",
+        "niño",
+        "infantil",
+        "bebé",
+        "dama",
+        "calcetines",
+        "kids",
+        "girl",
+        "women"
+      ]
+    },
+    {
+      "nombre": "🎮 Videojuegos",
+      "categorias": [
+        "gaming",
+        "videojuegos"
+      ]
+    },
+    {
+      "nombre": "🎮 Videojuegos (otras categorías)",
+      "palabras": [
+        "ps5",
+        "playstation",
+        "xbox",
+        "nintendo",
+        "switch 2",
+        "steam",
+        "juego ps",
+        "videojuego"
+      ],
+      "excluir": [
+        "funda",
+        "protector",
+        "pantalla",
+        "televisor",
+        "smart tv"
+      ]
+    },
+    {
+      "nombre": "Portátiles",
+      "palabras": [
+        "portátil",
+        "portatil",
+        "laptop",
+        "macbook"
+      ],
+      "excluir": [
+        "funda",
+        "mochila",
+        "reacondicionado"
+      ],
+      "precio_max": 900
+    },
+    {
+      "nombre": "Auriculares",
+      "palabras": [
+        "airpods",
+        "sony wh-1000",
+        "auriculares"
+      ],
+      "excluir": [
+        "funda"
+      ],
+      "precio_max": 250,
+      "descuento_min": 20
+    },
+    {
+      "nombre": "TV",
+      "palabras": [
+        "oled",
+        "smart tv",
+        "televisor"
+      ],
+      "precio_max": 1200,
+      "tiendas": [
+        "amazon",
+        "mediamarkt",
+        "pccomponentes",
+        "el corte inglés",
+        "mercado libre",
+        "liverpool"
+      ]
+    }
+  ]
+}

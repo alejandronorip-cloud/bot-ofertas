@@ -1,0 +1,32 @@
+name: Buscar ofertas
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # cada 10 minutos (GitHub puede retrasarlo unos minutos)
+  workflow_dispatch:          # botón para ejecutarlo a mano
+
+concurrency: ofertas
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recuperar ofertas ya avisadas
+        uses: actions/cache/restore@v4
+        with:
+          path: vistos.json
+          key: vistos-${{ github.run_id }}
+          restore-keys: vistos-
+      - name: Buscar y avisar por Telegram
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 bot.py --una-vez
+      - name: Guardar ofertas ya avisadas
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: vistos.json
+          key: vistos-${{ github.run_id }}
