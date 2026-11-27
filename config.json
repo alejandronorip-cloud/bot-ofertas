@@ -26,6 +26,48 @@
       "precio_max": 137
     },
     {
+      "nombre": "🤠 Botas cowboy de piel",
+      "palabras": [
+        "cowboy",
+        "camperas",
+        "campera",
+        "vaqueras",
+        "western",
+        "texanas",
+        "cowboy boots",
+        "sendra",
+        "dan post",
+        "ariat",
+        "tony mora",
+        "justin boots"
+      ],
+      "todas": [
+        [
+          "bota",
+          "boot"
+        ],
+        [
+          "piel",
+          "cuero",
+          "leather",
+          "ante",
+          "serraje"
+        ]
+      ],
+      "excluir": [
+        "sintétic",
+        "polipiel",
+        "piel vegana",
+        "vegan",
+        "niño",
+        "niña",
+        "infantil",
+        "kids",
+        "bebé",
+        "disfraz"
+      ]
+    },
+    {
       "nombre": "👕 Moda hombre",
       "categorias": [
         "moda",
