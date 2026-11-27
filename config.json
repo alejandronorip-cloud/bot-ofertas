@@ -36,10 +36,7 @@
         "texanas",
         "cowboy boots",
         "sendra",
-        "dan post",
-        "ariat",
-        "tony mora",
-        "justin boots"
+        "tony mora"
       ],
       "todas": [
         [
@@ -65,7 +62,8 @@
         "kids",
         "bebé",
         "disfraz"
-      ]
+      ],
+      "precio_max": 150
     },
     {
       "nombre": "👕 Moda hombre",
